@@ -10,9 +10,10 @@ import {
   type LazyExoticComponent,
 } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Navigate, Route, Routes, useParams } from 'react-router';
+import { Route, Routes, useParams } from 'react-router';
 import AuroraBackground from './components/AuroraBackground';
 import AppShell from './components/AppShell';
+import NotFound from './components/NotFound';
 import ToolGrid from './components/ToolGrid';
 import { useLocalStorage } from './hooks/useLocalStorage';
 
@@ -53,7 +54,7 @@ function ToolLoading() {
 function LazyToolRoute() {
   const { toolId } = useParams();
   const Tool = toolId ? lazyTools[toolId] : undefined;
-  if (!Tool) return <Navigate to="/" replace />;
+  if (!Tool) return <NotFound />;
   return (
     <Suspense fallback={<ToolLoading />}>
       <Tool />
@@ -75,7 +76,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<ToolGrid />} />
           <Route path="/tool/:toolId" element={<LazyToolRoute />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AppShell>
     </RecentContext.Provider>

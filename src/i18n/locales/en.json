@@ -26,6 +26,11 @@
     "recentlyUsed": "Recently Used",
     "allTools": "All Tools"
   },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page or tool you requested does not exist, or its address may have changed.",
+    "backHome": "Back to toolbox"
+  },
   "categories": {
     "all": "All",
     "encode": "Encode",

@@ -26,6 +26,11 @@
     "recentlyUsed": "最近使用",
     "allTools": "全部工具"
   },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "你访问的页面或工具不存在，其地址也可能已经变更。",
+    "backHome": "返回工具箱"
+  },
   "categories": {
     "all": "全部",
     "encode": "编码",
