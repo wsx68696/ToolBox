@@ -1,0 +1,45 @@
+{
+  "name": "toolbox",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/geist-mono": "^5.2.8",
+    "@fontsource/geist-sans": "^5.2.5",
+    "@scure/bip39": "^2.2.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "bcryptjs": "^3.0.3",
+    "dompurify": "^3.4.12",
+    "fast-xml-parser": "^5.10.0",
+    "figlet": "^1.11.2",
+    "i18next": "^26.3.6",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "js-yaml": "^5.2.1",
+    "libphonenumber-js": "^1.13.8",
+    "lucide-react": "^0.475.0",
+    "marked": "^18.0.6",
+    "qrcode": "^1.5.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^17.0.9",
+    "react-router": "^7.1.5",
+    "smol-toml": "^1.7.0",
+    "sql-formatter": "^15.8.2",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^22.10.10",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.7.3",
+    "vite": "^6.0.11"
+  }
+}
