@@ -7,6 +7,7 @@
     "searchPlaceholder": "搜索工具...",
     "searchTools": "搜索工具或按 /",
     "noResults": "未找到工具",
+    "loading": "正在加载工具…",
     "relatedTools": "相关工具",
     "close": "关闭",
     "theme": {
