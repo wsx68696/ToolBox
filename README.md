@@ -4,7 +4,7 @@
 
 ## 主要特性
 
-- 包含 85 个实用工具，覆盖编码、格式化、加密、生成、Web、文本和网络等分类。
+- 包含 87 个实用工具，覆盖编码、格式化、加密、生成、Web、文本和网络等分类。
 - 集成完整 CyberChef 引擎，提供 495 个操作、配方编排、收藏和本地持久化。
 - Emoji 选择器内置 1,592 个 Unicode CLDR Emoji，支持中英文名称和关键词搜索。
 - 支持中文与英文界面、浅色、深色及跟随系统主题。
@@ -15,9 +15,9 @@
 
 - 编码与转换：Base64、URL、HTML 实体、二进制、Unicode、进制转换。
 - 数据格式：JSON、XML、YAML、TOML、CSV、SQL 格式化及互转。
-- 密码与安全：Hash、HMAC、Bcrypt、AES、RSA、TOTP、BIP39、JWT。
+- 密码与安全：Hash、Magic Hash、HMAC、Bcrypt、AES、RSA、TOTP、BIP39、JWT。
 - 文本处理：正则表达式、文本差异、大小写转换、列表处理、Emoji、ASCII Art。
-- 网络工具：IPv4/IPv6、CIDR、MAC 地址、OUI 厂商查询、端口和 WiFi 二维码。
+- 网络工具：HTTP 请求头查询、IPv4/IPv6、CIDR、MAC 地址、OUI 厂商查询、端口和 WiFi 二维码。
 - 其他工具：UUID/ULID、二维码、密码生成、时间转换、摄像头录制、PDF 签名检查。
 
 ## 本地运行
@@ -64,4 +64,3 @@ npm run preview
 ## 开源许可
 
 本项目使用 [MIT License](./LICENSE)。
-

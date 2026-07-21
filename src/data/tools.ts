@@ -1,4 +1,4 @@
-import { ArrowRightLeft, AppWindow, AtSign, Barcode, BarChart3, Binary, BookOpen, Braces, Calculator, CalendarClock, CaseSensitive, ChefHat, Clock, Code2, Container, Cpu, Crown, Database, EyeOff, FileCheck2, FileCode, FileDiff, FileKey, FileType2, FileUp, Fingerprint, FolderTree, Gauge, GitBranch, GitCompare, Globe, Hash, Hourglass, Image, Key, Keyboard, KeyRound, KeySquare, Landmark, Languages, Link, Link2, Link2Off, ListChecks, Lock, LockKeyhole, MonitorSmartphone, Network, Palette, Pencil, Percent, Pilcrow, QrCode, Radio, Regex, Router, Search, ShieldCheck, Shrink, Shuffle, Smile, Smartphone, Table, Tags, Terminal, Thermometer, Ticket, Timer, Type, Video, WalletMinimal, Waypoints, Wifi, Minimize2, type LucideIcon } from 'lucide-react';
+import { ArrowRightLeft, AppWindow, AtSign, AudioLines, Barcode, BarChart3, Baseline, Binary, Bot, BookOpen, Braces, Calculator, CalendarClock, CaseSensitive, ChefHat, Clock, Code2, Combine, Container, Cpu, Crown, Database, Dices, EyeOff, FileCheck2, FileCode, FileDiff, FileDigit, FileKey, FileSearch, FileType2, FileUp, Fingerprint, Flag, FolderTree, Gauge, GitBranch, GitCompare, Globe, Hash, Hourglass, Image, ImageOff, Key, Keyboard, KeyRound, KeySquare, Landmark, Languages, Link, Link2, Link2Off, ListChecks, ListOrdered, Lock, LockKeyhole, Mails, MonitorSmartphone, Network, Palette, PanelTop, Parentheses, Pencil, Percent, Pilcrow, QrCode, Radio, Regex, Router, Search, ShieldCheck, ShieldHalf, Shrink, Shuffle, Smile, Smartphone, Space, Table, TableProperties, Tags, Terminal, Thermometer, Ticket, Timer, Type, Video, WalletMinimal, Waypoints, Wifi, Minimize2, type LucideIcon } from 'lucide-react';
 
 export type ToolCategory = 'Encode' | 'Format' | 'Crypto' | 'Generate' | 'Web' | 'Text' | 'Network';
 
@@ -15,6 +15,7 @@ export const tools = [
   { id: 'jwt', category: 'Web', color: '#f472b6', icon: ShieldCheck },
   { id: 'uuid', category: 'Generate', color: '#fbbf24', icon: Fingerprint },
   { id: 'hash', category: 'Crypto', color: '#22d3ee', icon: Hash },
+  { id: 'magic-hashes', category: 'Crypto', color: '#f87171', icon: Hash },
   { id: 'url', category: 'Encode', color: '#f87171', icon: Link2 },
   { id: 'color', category: 'Web', color: '#818cf8', icon: Palette },
   { id: 'regex', category: 'Web', color: '#4ade80', icon: Regex },
@@ -33,6 +34,7 @@ export const tools = [
   { id: 'ipv4-subnet', category: 'Network', color: '#4ade80', icon: Globe },
   { id: 'random-port', category: 'Network', color: '#fbbf24', icon: Shuffle },
   { id: 'http-status', category: 'Web', color: '#f87171', icon: Globe },
+  { id: 'http-headers', category: 'Web', color: '#22d3ee', icon: PanelTop },
   { id: 'mime-types', category: 'Web', color: '#818cf8', icon: FileType2 },
   { id: 'basic-auth', category: 'Web', color: '#f472b6', icon: KeySquare },
   { id: 'chmod-calculator', category: 'Web', color: '#4ade80', icon: Terminal },
@@ -95,6 +97,26 @@ export const tools = [
   { id: 'mac-address-lookup', category: 'Network', color: '#22d3ee', icon: Search },
   { id: 'bip39-generator', category: 'Crypto', color: '#fbbf24', icon: WalletMinimal },
   { id: 'cyberchef', category: 'Encode', color: '#4ade80', icon: ChefHat },
+  { id: 'png-size-fixer', category: 'Crypto', color: '#f472b6', icon: ImageOff },
+  { id: 'hex', category: 'Encode', color: '#818cf8', icon: FileDigit },
+  { id: 'morse', category: 'Encode', color: '#22d3ee', icon: AudioLines },
+  { id: 'core-values-cipher', category: 'Crypto', color: '#f87171', icon: Flag },
+  { id: 'jsfuck', category: 'Encode', color: '#818cf8', icon: Parentheses },
+  { id: 'leet-speak', category: 'Text', color: '#4ade80', icon: Baseline },
+  { id: 'cn-en-spacing', category: 'Text', color: '#818cf8', icon: Space },
+  { id: 'line-numbers', category: 'Text', color: '#f472b6', icon: ListOrdered },
+  { id: 'text-shuffle', category: 'Text', color: '#fbbf24', icon: Shuffle },
+  { id: 'ascii-table', category: 'Text', color: '#22d3ee', icon: TableProperties },
+  { id: 'des', category: 'Crypto', color: '#f472b6', icon: Lock },
+  { id: 'triple-des', category: 'Crypto', color: '#fbbf24', icon: ShieldHalf },
+  { id: 'random-ip', category: 'Network', color: '#fbbf24', icon: Dices },
+  { id: 'random-email', category: 'Generate', color: '#f472b6', icon: Mails },
+  { id: 'random-ua', category: 'Generate', color: '#f87171', icon: Bot },
+  { id: 'cidr-aggregator', category: 'Network', color: '#4ade80', icon: Combine },
+  { id: 'file-type', category: 'Web', color: '#22d3ee', icon: FileSearch },
+  { id: 'json-to-go', category: 'Format', color: '#4ade80', icon: Braces },
+  { id: 'dir-tree', category: 'Format', color: '#f472b6', icon: FolderTree },
+  { id: 'css-minify', category: 'Format', color: '#4ade80', icon: Minimize2 },
 ] as const satisfies readonly ToolMeta[];
 
 export type ToolId = (typeof tools)[number]['id'];
