@@ -1,4 +1,4 @@
-import { ArrowRightLeft, AppWindow, AtSign, AudioLines, Barcode, BarChart3, Baseline, Binary, Bot, BookOpen, Braces, Calculator, CalendarClock, CaseSensitive, ChefHat, Clock, Code2, Combine, Container, Cpu, Crown, Database, Dices, EyeOff, FileCheck2, FileCode, FileDiff, FileDigit, FileKey, FileSearch, FileType2, FileUp, Fingerprint, Flag, FolderTree, Gauge, GitBranch, GitCompare, Globe, Hash, Hourglass, Image, ImageOff, Key, Keyboard, KeyRound, KeySquare, Landmark, Languages, Link, Link2, Link2Off, ListChecks, ListOrdered, Lock, LockKeyhole, Mails, MonitorSmartphone, Network, Palette, PanelTop, Parentheses, Pencil, Percent, Pilcrow, QrCode, Radio, Regex, Router, Search, ShieldCheck, ShieldHalf, Shrink, Shuffle, Smile, Smartphone, Space, Table, TableProperties, Tags, Terminal, Thermometer, Ticket, Timer, Type, Video, WalletMinimal, Waypoints, Wifi, Minimize2, type LucideIcon } from 'lucide-react';
+import { Aperture, AppWindow, ArrowRightLeft, AtSign, AudioLines, BarChart3, Barcode, Baseline, Binary, BookOpen, Bot, Braces, Calculator, CalendarClock, CaseSensitive, ChefHat, CircleDot, Clapperboard, Clock, Clock3, Code2, Combine, Container, Cpu, Crown, Database, Dices, Download, Egg, Eye, EyeOff, FileArchive, FileCheck2, FileCode, FileDiff, FileDigit, FileJson, FileKey, FileSearch, FileType, FileType2, FileUp, FileVideo, Film, Fingerprint, Flag, FolderTree, Gauge, GitBranch, GitCompare, Globe, Grid3x3, Hash, Hourglass, Image, ImageOff, ImagePlus, Key, Keyboard, KeyRound, KeySquare, Landmark, Languages, LineChart, Link, Link2, Link2Off, ListChecks, ListOrdered, Lock, LockKeyhole, Mails, Minimize2, MonitorSmartphone, Music, Network, Paintbrush, Palette, PanelTop, Parentheses, Pencil, PenTool, Percent, PieChart, Pilcrow, Pipette, QrCode, Radar, Radio, RectangleHorizontal, Regex, Router, ScanLine, ScanText, Search, Shield, ShieldCheck, ShieldHalf, Shrink, Shuffle, Smartphone, Smile, Space, SplitSquareHorizontal, Table, TableProperties, Tags, Terminal, Thermometer, Ticket, Timer, TimerReset, Type, Video, WalletMinimal, Sparkles, Waves, Waypoints, Wifi, type LucideIcon } from 'lucide-react';
 
 export type ToolCategory = 'Encode' | 'Format' | 'Crypto' | 'Generate' | 'Web' | 'Text' | 'Network';
 
@@ -117,6 +117,57 @@ export const tools = [
   { id: 'json-to-go', category: 'Format', color: '#4ade80', icon: Braces },
   { id: 'dir-tree', category: 'Format', color: '#f472b6', icon: FolderTree },
   { id: 'css-minify', category: 'Format', color: '#4ade80', icon: Minimize2 },
+
+  { id: 'htpasswd', category: 'Crypto', color: '#f472b6', icon: KeyRound },
+  { id: 'xss-vector', category: 'Web', color: '#f87171', icon: Code2 },
+  { id: 'hex-editor', category: 'Encode', color: '#818cf8', icon: Binary },
+  { id: 'countdown', category: 'Web', color: '#fbbf24', icon: TimerReset },
+  { id: 'eat-what', category: 'Generate', color: '#f87171', icon: Egg },
+  { id: 'life-grid', category: 'Web', color: '#22d3ee', icon: Grid3x3 },
+  { id: 'json-js', category: 'Format', color: '#4ade80', icon: Braces },
+  { id: 'color-picker', category: 'Web', color: '#818cf8', icon: Pipette },
+  { id: 'qr-decode', category: 'Generate', color: '#4ade80', icon: ScanLine },
+  { id: 'img-base64', category: 'Encode', color: '#22d3ee', icon: Image },
+  { id: 'image-grayscale', category: 'Web', color: '#818cf8', icon: Aperture },
+  { id: 'image-round', category: 'Web', color: '#f472b6', icon: CircleDot },
+  { id: 'image-pixelate', category: 'Web', color: '#fbbf24', icon: Grid3x3 },
+  { id: 'image-convert', category: 'Web', color: '#4ade80', icon: ImagePlus },
+  { id: 'image-compress', category: 'Web', color: '#f87171', icon: Minimize2 },
+  { id: 'image-watermark', category: 'Web', color: '#22d3ee', icon: Paintbrush },
+  { id: 'image-split', category: 'Web', color: '#818cf8', icon: SplitSquareHorizontal },
+
+  { id: 'html-format', category: 'Format', color: '#f87171', icon: FileCode },
+  { id: 'css-format', category: 'Format', color: '#4ade80', icon: FileCode },
+  { id: 'js-format', category: 'Format', color: '#fbbf24', icon: FileCode },
+  { id: 'ts-format', category: 'Format', color: '#818cf8', icon: FileCode },
+  { id: 'yaml-format', category: 'Format', color: '#f472b6', icon: FileCode },
+  { id: 'less-css', category: 'Format', color: '#4ade80', icon: FileCode },
+  { id: 'ocr', category: 'Web', color: '#22d3ee', icon: ScanText },
+  { id: 'sqlite', category: 'Web', color: '#fbbf24', icon: Database },
+  { id: 'chart-line', category: 'Web', color: '#22d3ee', icon: LineChart },
+  { id: 'chart-radar', category: 'Web', color: '#818cf8', icon: Radar },
+  { id: 'chart-nightingale', category: 'Web', color: '#f472b6', icon: PieChart },
+  { id: 'zip-crack', category: 'Crypto', color: '#f87171', icon: FileArchive },
+  { id: 'video-frame', category: 'Web', color: '#f472b6', icon: Video },
+
+  { id: 'video-to-gif', category: 'Web', color: '#f472b6', icon: Film },
+  { id: 'video-convert', category: 'Web', color: '#22d3ee', icon: FileVideo },
+  { id: 'audio-convert', category: 'Web', color: '#4ade80', icon: Music },
+  { id: 'extract-audio', category: 'Web', color: '#fbbf24', icon: AudioLines },
+  { id: 'whiteboard', category: 'Web', color: '#818cf8', icon: PenTool },
+  { id: 'pyc-decompile', category: 'Web', color: '#4ade80', icon: FileCode },
+  { id: 'pyc-disassemble', category: 'Web', color: '#818cf8', icon: Binary },
+  { id: 'md5-collision', category: 'Crypto', color: '#f87171', icon: Hash },
+  { id: 'md-html', category: 'Format', color: '#818cf8', icon: FileType2 },
+
+  { id: 'base-family', category: 'Encode', color: '#818cf8', icon: Binary },
+  { id: 'caesar', category: 'Crypto', color: '#fbbf24', icon: KeyRound },
+  { id: 'rail-fence', category: 'Crypto', color: '#4ade80', icon: LockKeyhole },
+  { id: 'vigenere', category: 'Crypto', color: '#f472b6', icon: KeyRound },
+  { id: 'adfgx', category: 'Crypto', color: '#22d3ee', icon: ShieldCheck },
+  { id: 'brainfuck', category: 'Encode', color: '#f87171', icon: Code2 },
+  { id: 'uu-xx', category: 'Encode', color: '#818cf8', icon: Binary },
+  { id: 'sojson', category: 'Encode', color: '#fbbf24', icon: Sparkles },
 ] as const satisfies readonly ToolMeta[];
 
 export type ToolId = (typeof tools)[number]['id'];
